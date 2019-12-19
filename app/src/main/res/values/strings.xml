@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CTV Demo</string>
+    <string name="browse_title">CTV Demo App</string>
+    <string name="related_videos">Related Videos</string>
+    <string name="play_video">Play Video</string>
+    <string name="using_leanback">Using LeanBack player</string>
+    <string name="using_exoplayer">Using ExoPlayer</string>
+
+    <string name="content_url"><![CDATA[https://storage.googleapis.com/gvabox/media/samples/stock.mp4]]></string>
+</resources>

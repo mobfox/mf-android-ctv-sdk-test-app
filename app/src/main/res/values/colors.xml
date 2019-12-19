@@ -1,0 +1,11 @@
+<resources>
+    <color name="brand_color">#009efb</color>
+    <color name="brand_color_light">#2e5937</color>
+    <color name="brand_secondary_color">#ff614d</color>
+    <color name="brand_secondary_color_light">#f7ac14</color>
+
+    <color name="background_gradient_start">@color/brand_color</color>
+    <color name="background_gradient_end">@color/brand_color_light</color>
+    <color name="selected_background">@color/brand_color</color>
+    <color name="default_background">@color/brand_secondary_color</color>
+</resources>

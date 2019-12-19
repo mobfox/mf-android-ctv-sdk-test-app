@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.market.ctvsampleapp">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-feature android:name="android.hardware.location.gps" android:required="false"/>
+
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+    <uses-feature
+        android:name="android.software.leanback"
+        android:required="true" />
+
+    <application
+        android:name=".presentation.AndroidTvSampleApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/marketgroup"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:banner="@drawable/banner"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name=".presentation.home.MainActivity"
+            android:icon="@drawable/marketgroup"
+            android:label="@string/app_name"
+            android:logo="@drawable/marketgroup"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".presentation.videodetails.DetailsActivity" />
+        <activity android:name=".presentation.playback.PlaybackActivity" />
+
+        <activity
+            android:name=".presentation.playback.exoplayervideoplayer.ExoPlayerVideoActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:configChanges="keyboard|keyboardHidden|navigation"
+            />
+    </application>
+
+</manifest>
